@@ -1,4 +1,4 @@
-<h1>New Surf Spot</h1>
+<h1>Add a New Surf Spot</h1>
 
 <%= form_for :surf_spot, url: surf_spots_path do |f| %>
   <p>
@@ -28,12 +28,12 @@
 
   <p>
     <%= f.label :latitude %><br>
-    <%= f.number_field :latitude %>
+    <%= f.number_field :latitude, step: :any %>
   </p>
 
   <p>
     <%= f.label :longtitude %><br>
-    <%= f.number_field :longtitude %>
+    <%= f.number_field :longtitude, step: :any %>
   </p>
 
   <p>
